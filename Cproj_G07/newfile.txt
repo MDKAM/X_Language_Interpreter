@@ -1,0 +1,14 @@
+int a
+int b
+int m
+assign a,1
+assign m,0
+label star
+assign b,0
+label rew
+add a,a,1
+add b,b,1
+ifgo 5>b,rew
+add m,m
+ifgo 5>m,star
+print a
