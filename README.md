@@ -12,13 +12,13 @@ The X Language Interpreter is a command-line program designed to interpret and e
    - The session ends upon receiving the `EXIT` command.
 
 2. **Command Support**:
-   - Variable declarations (`INT` and `REAL` types with a maximum of 8-character names).
-                            INT <variable_name>
-   - Basic arithmetic operations: `ADD`, `SUB`, `MULT`, `DIVI`, `DIVR`, and `MOD`.
-   - Input/output operations: `READ` and `PRINT`.
-   - Assignment operation: `ASSIGN`.
+   - Variable declarations (`INT` and `REAL` types with a maximum of 8-character names). Example:  `INT <variable_name>`
+   - Basic arithmetic operations: `ADD`, `SUB`, `MULT`, `DIVI`, `DIVR`, and `MOD`. Example: `<command> <result_variable>,<operand_1>,<operand_2>`
+        - The `DIVI` is Integer Division and `DIVR` is Real Division. And use `MOD` to calculate the remainder of the division between two integers.
+   - Input/output operations: `READ` and `PRINT`. Example: `READ <variable_name>` or `PRINT "<message>"`
+   - Assignment operation: `ASSIGN`. Example: `ASSIGN <variable_name>,<value>` or `ASSIGN <variable_name_1>,<variable_name_2>`
    - File execution: `RUNF <filename>` (Executes X language programs from files line-by-line).
-   - Conditional branching: `LABEL <label>` and `IFGO <param1>, <param2>, <label>`.
+   - Conditional branching(jump): `LABEL <label>` and `IFGO <param1>, <param2>, <label>`.
    - Session control: `END` and `EXIT`.
 
 3. **Error Handling**:
