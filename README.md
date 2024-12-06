@@ -5,14 +5,15 @@
 
 The X Language Interpreter is a command-line program designed to interpret and execute commands written in the custom **X language**. The interpreter processes commands, validates their syntax and semantics, and executes them. It provides appropriate error messages for invalid commands and supports the following key features:
 
-### Key Features (Phase 1):
+### Key Features:
 1. **Interactive Command Processing**:
    - The interpreter displays a `->` prompt, ready to accept commands.
    - Users can execute commands or receive error messages for invalid inputs.
    - The session ends upon receiving the `EXIT` command.
 
 2. **Command Support**:
-   - Variable declarations (`INT` and `REAL` types with a maximum of 8-character names). Example:  `INT <variable_name>`
+   - Variable declarations (`INT` and `REAL` types with a maximum of 8-character names). 
+        - Example:  `INT <variable_name>`
    - Basic arithmetic operations: `ADD`, `SUB`, `MULT`, `DIVI`, `DIVR`, and `MOD`. Example: `<command> <result_variable>,<operand_1>,<operand_2>`
         - The `DIVI` is Integer Division and `DIVR` is Real Division. And use `MOD` to calculate the remainder of the division between two integers.
    - Input/output operations: `READ` and `PRINT`. Example: `READ <variable_name>` or `PRINT "<message>"`
